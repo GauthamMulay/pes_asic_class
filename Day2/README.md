@@ -98,3 +98,11 @@ this will generate `custom1to9.o`
 Run this command for the output `custom1to9.o
 
 ![custom](https://github.com/GauthamMulay/pes_asics_class/assets/113660503/cedbc0ac-0e9e-43f4-bdf3-b8ea7c6154a4)
+
+Assembly code
+
+```
+riscv64-unkown-elf-objdump -d custom1to9.o|less
+```
+
+![assembly_day2](https://github.com/GauthamMulay/pes_asics_class/assets/113660503/a7610a4f-0cc0-4f45-a09d-ba42a1be380d)
