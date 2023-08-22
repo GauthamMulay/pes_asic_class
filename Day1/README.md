@@ -26,6 +26,7 @@
 6. **RTL:** RTL serves as an abstraction level in the design process that represents the behavior of a digital circuit in terms of registers and the operations that transfer data between them.
 
  7. **Hardware:** Hardware refers to the physical components of a computer system or any electronic device. It encompasses all the tangible parts that make up a computing or electronic device and enable it to perform various tasks.
+![image](https://github.com/GauthamMulay/pes_asics_class/assets/113660503/26e4790c-e0ae-40fd-b10d-be70657f9352)
 
 ## Detail Description of Course Content
 **Pseudo Instructions:** Pseudo-instructions are used to simplify programming, improve code readability, and reduce the number of explicit instructions a programmer needs to write. They are especially useful for common programming patterns that involve multiple instructions.
