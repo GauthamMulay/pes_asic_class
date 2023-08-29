@@ -48,9 +48,10 @@ Logic synthesis is a vital step in digital circuit design where high-level descr
 -  These cells are predefined logic gates with different functionalities and characteristics
 -  It will also contain fast and slow version of same gate
 #### why fast and slow version of same gate?
-Fast and slow versions of gates are essential in digital circuit design to balance between clock frequency and timing constraints. Fast gates have shorter propagation delays and are used to reduce setup and hold time violations, allowing for higher clock frequencies. Slow gates, with longer delays, can be used to intentionally slow down critical paths or address timing issues. The Tclk formula helps calculate the maximum clock frequency while considering these factors
+- **Fast Gates**: These gates are like speedy messengers. When you need to get something done quickly, you send these messengers because they're fast. In circuits, fast gates are used in critical parts where timing is super important. They help make sure things happen at the right times and prevent mistakes caused by timing issues.
+- **Slow Gates**: Think of slow gates as patient helpers. Sometimes, you want things to slow down a bit, maybe to fix a timing problem. Slow gates take their time to do their job. They can be used in places where you deliberately want things to happen more slowly.
+- **Tclk Formula**: This formula helps figure out how fast the overall circuit can run without causing problems. It considers the mix of fast and slow gates and calculates the maximum speed at which everything can work together without causing timing troubles. It's like finding the fastest speed a team can work without anyone getting out of sync.
 
-**Tclk Formula:**
 
 ![timeq](https://github.com/GauthamMulay/pes_asics_class/assets/113660503/19c95326-37bb-4a55-b71c-f53ed7453f6a)
 
@@ -61,12 +62,13 @@ Fast and slow versions of gates are essential in digital circuit design to balan
 ## Lab
 Steps to realize good_mux(design) in terms of standard cells avilable in library sky130_fd_sc_hd__tt_025C_1v80.lib
 - **Step-1:** Go to the location of the where the verilog files and type command ```yosys``` in the terminal
-  
+
 - **Step-2:** Read Library ```read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
-  ![read_lib](https://github.com/GauthamMulay/pes_asics_class/assets/113660503/0b2045ce-5fd4-4f86-ba63-1a8fa11052c3)
+      ![read_lib](https://github.com/GauthamMulay/pes_asics_class/assets/113660503/0b2045ce-5fd4-4f86-ba63-1a8fa11052c3)
 
 - **Step-3:** Read the design File ```read_verilog mux.v```
-   ![read_file](https://github.com/GauthamMulay/pes_asics_class/assets/113660503/cf79bffb-ade0-4bec-bf3f-21dce523becf)
+
+  ![read_file](https://github.com/GauthamMulay/pes_asics_class/assets/113660503/cf79bffb-ade0-4bec-bf3f-21dce523becf)
 
 - **Step-4:** Do the synthesis using command ``` synth -top mux21```
   ![synth](https://github.com/GauthamMulay/pes_asics_class/assets/113660503/2a1e237c-e672-4afd-90c0-ffffc7eefa55)
